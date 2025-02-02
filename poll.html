@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>   استبيان تقييم موقع إيريكا</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f2f2f2;
+            text-align: right;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+            color: #555;
+        }
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 5px;
+        }
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            resize: vertical;
+        }
+        input[type="submit"] {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+       
+    </style>
+</head>
+<body>
+    <h1>  استبيان تقييم موقع إيريكا    </h1>
+    <form action="#" method="post">
+        <label>  كيف وصلت إلى موقع إيريكا؟  * </label>
+        <input type="radio" id="rating1-1" name="rating1" value="محركات البحث (مثل جوجل)">
+        <label for="rating1-1">محركات البحث (مثل جوجل)</label>
+        <input type="radio" id="rating1-2" name="rating1" value=" وسائل التواصل الاجتماعي ( إنستغرام)">
+        <label for="rating1-2">  وسائل التواصل الاجتماعي (مثل  إنستغرام) </label>
+        <input type="radio" id="rating1-3" name="rating1" value="توصية من صديق أو معرف">
+        <label for="rating1-3">توصية من صديق أو معرف</label>
+      
+        <label> هل وجدت تصميم موقع إيريكا جذابًا؟    *    </label>
+        <input type="radio" id="rating2-1" name="rating2" value="نعم، بالتأكيد">
+        <label for="rating2-1">نعم، بالتأكيد</label>
+        <input type="radio" id="rating2-2" name="rating2" value="نعم، إلى حد ما">
+        <label for="rating2-2">نعم، إلى حد ما</label>
+        <input type="radio" id="rating2-3" name="rating2" value="لا">
+        <label for="rating2-3">لا</label>
+
+
+        <label>هل وجدت الألوان المستخدمة في الموقع متناسبة وجذابة؟ *       </label>
+        <input type="radio" id="rating6-1" name="rating6" value="نعم">
+        <label for="rating6-1">نعم</label>
+        <input type="radio" id="rating6-2" name="rating6" value="نعم، إلى حد ما">
+        <label for="rating6-2">نعم، إلى حد ما</label>
+        <input type="radio" id="rating6-3" name="rating6" value="لا">
+        <label for="rating6-3">لا</label>
+
+        <label>هل تم عرض المعلومات بشكل منظم ومفهوم؟  *     </label>
+        <input type="radio" id="rating7-1" name="rating7" value="نعم">
+        <label for="rating7-1">نعم</label>
+        <input type="radio" id="rating6-2" name="rating6" value="نعم، إلى حد ما">
+        <label for="rating6-2">نعم، إلى حد ما</label>
+        <input type="radio" id="rating7-2" name="rating7" value="لا">
+        <label for="rating7-2">لا</label>
+
+        <label> هل كانت تجربة استخدام الموقع متسقة عبر مختلف الأجهزة (الحاسوب، الهاتف المحمول، اللوحي) * </label>
+        <input type="radio" id="rating7-1" name="rating7" value="نعم">
+        <label for="rating7-1">نعم</label>
+        <input type="radio" id="rating7-2" name="rating7" value="لا">
+        <label for="rating7-2">لا</label>
+
+
+
+        <label>  ما هي أبرز الجوانب التي استمتعت بها في تصميم الموقع؟  *      </label>
+        <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br>
+
+        <label>   هل وجدت الصور والرسومات المستخدمة عالية الجودة ومناسبة للمحتوى؟  *   </label>
+        <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br>
+
+
+
+        <label>هل توصينا بخدماتنا لآخرين؟  * </label>
+        <input type="radio" id="rating10-1" name="rating10" value="نعم">
+        <label for="rating10-1">نعم</label><br>
+        <input type="radio" id="rating10-2" name="rating10" value="لا">
+        <label for="rating10-2">لا</label><br>
+
+        <p> هل لديكم أي تعليقات أو ملاحظات إضافية حول الموقع ؟ *  </p>
+        <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br>
+
+        <input type="submit" value="إرسال">
+        
+        <label>   شكرًا لك على زيارة موقع إيريكا! نود الحصول على آرائك حول تجربتك مع الموقع لتحسين خدماتنا. يرجى الإجابة عن الأسئلة التالية بصراحة.
+
+        </label>
+
+    </form>
+</body>
+</html>
